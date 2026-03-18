@@ -125,6 +125,28 @@
       display: block;
     }
 
+    .map-cover {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 130px;
+      height: 48px;
+      background: black;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .map-cover-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 340px;
+      height: 24px;
+      background: black;
+      z-index: 10;
+      pointer-events: none;
+    }
+
     footer {
       padding: 10px 16px;
       background: linear-gradient(135deg, #fff0f5 0%, #f0faef 100%);
@@ -170,8 +192,8 @@
   <header>
     <div class="header-icon">🎵</div>
     <div class="header-text">
-      <h1>Concert <span>New Generation Choir</span> & Cantabile</h1>
-      <p>Fes clic als punts per veure la informació</p>
+      <h1>Concert <span>Cantabile & New Generation Choir</span></h1>
+      <p>Mapa de la zona</p>
     </div>
   </header>
 
@@ -190,6 +212,8 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+    <div class="map-cover"></div>
+    <div class="map-cover-left"></div>
   </div>
 
   <footer>
