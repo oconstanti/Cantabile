@@ -122,47 +122,18 @@
     }
     .map-wrapper iframe {
       width: 100%;
-      height: calc(100% + 50px);
+      height: calc(100% + 70px);
       position: absolute;
-      top: -50px;
+      top: -70px;
       left: 0;
       border: none;
       display: block;
-    }
-    footer {
-      padding: 10px 16px;
-      background: linear-gradient(135deg, #fff0f5 0%, #f0faef 100%);
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    footer span {
-      font-size: 11px;
-      color: var(--muted);
-    }
-    .open-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: linear-gradient(135deg, #d45f8a, #e8856a);
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 8px;
-      white-space: nowrap;
-      font-family: 'DM Sans', sans-serif;
-      box-shadow: 0 3px 10px rgba(212,95,138,0.3);
     }
     @media (min-width: 600px) {
       header { padding: 20px 28px; }
       .header-text h1 { font-size: 19px; }
       .legend { padding: 12px 24px; gap: 8px; }
       .legend-item { font-size: 13px; padding: 6px 14px; }
-      footer { padding: 12px 24px; }
       .header-brand img { height: 40px; }
       .header-brand span { font-size: 10px; }
     }
@@ -180,7 +151,7 @@
       <img src="Logo SmartFlow.png" alt="SmartFlow">
     </div>
   </header>
- 
+
   <div class="legend">
     <div class="legend-item"><span class="dot" style="background:#e53935"></span> El Cercle: Assaig i Concert</div>
     <div class="legend-item"><span class="dot" style="background:#F9A825"></span> Dinar: punt de trobada</div>
@@ -190,7 +161,7 @@
     <div class="legend-item"><span class="dot" style="background:#43a047"></span> Menjar per emportar</div>
     <div class="legend-item"><span class="dot" style="background:#097138"></span> Supermercats</div>
   </div>
- 
+
   <div class="map-wrapper">
     <iframe
       src="https://www.google.com/maps/d/embed?mid=1w6v3yMUSgQB5C4wG7lPBRrvL31jdkUk&ehbc=2E312F"
@@ -199,12 +170,6 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
- 
-  <footer>
-    <span>📍 Toca un punt per veure detalls</span>
-    <a class="open-btn" href="https://www.google.com/maps/d/viewer?mid=1w6v3yMUSgQB5C4wG7lPBRrvL31jdkUk" target="_blank">
-      Obrir ↗
-    </a>
-  </footer>
+
 </body>
 </html>
