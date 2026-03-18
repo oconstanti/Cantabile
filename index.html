@@ -33,7 +33,6 @@
 
     header {
       padding: 16px 20px 12px;
-      background: var(--surface);
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -76,16 +75,12 @@
 
     .legend {
       display: flex;
-      gap: 7px;
+      flex-wrap: wrap;
+      gap: 6px;
       padding: 10px 16px;
-      overflow-x: auto;
       background: #fff8f0;
       border-bottom: 1px solid var(--border);
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
     }
-
-    .legend::-webkit-scrollbar { display: none; }
 
     .legend-item {
       display: flex;
@@ -161,7 +156,7 @@
     @media (min-width: 600px) {
       header { padding: 20px 28px; }
       .header-text h1 { font-size: 19px; }
-      .legend { padding: 12px 24px; gap: 10px; }
+      .legend { padding: 12px 24px; gap: 8px; }
       .legend-item { font-size: 13px; padding: 6px 14px; }
       footer { padding: 12px 24px; }
     }
@@ -183,9 +178,9 @@
     <div class="legend-item"><span class="dot" style="background:#FFD600"></span> Carrer tallat: Hi pots passar si vas a un pàrquing</div>
     <div class="legend-item"><span class="dot" style="background:#1e88e5"></span> Zona blava</div>
     <div class="legend-item"><span class="dot" style="background:#757575"></span> Zona càrrega i descàrrega</div>
+    <div class="legend-item"><span class="dot" style="background:#43a047"></span> Menjar per emportar</div>
     <div class="legend-item"><span class="dot" style="background:#097138"></span> Supermercats</div>
-    <div class="legend-item"><span class="dot" style="background:#43a047"></span> Menjar per emportar</div    
-    </div>
+  </div>
 
   <div class="map-wrapper">
     <iframe
